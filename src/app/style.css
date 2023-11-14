@@ -1,0 +1,47 @@
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-appear-active,
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.todo-enter {
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(-20%);
+}
+
+.todo-enter-active {
+  opacity: 1;
+  max-height: 100px;
+  /* Please adjust to match the height of your list items */
+  transform: translateY(0);
+  transition: opacity 500ms, max-height 500ms, transform 500ms;
+}
+
+.todo-exit {
+  opacity: 1;
+  max-height: 100px;
+  /* Please adjust to match the height of your list items */
+  transform: translateY(0);
+}
+
+.todo-exit-active {
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(-20%);
+  transition: opacity 500ms, max-height 500ms, transform 500ms;
+}
