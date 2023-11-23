@@ -25,9 +25,9 @@ export default function Home() {
   return (
     <main>
       <div className="text-center">
-        <h1 className="text-4xl mt-3">TODO LIST</h1>
+        <h1 className="text-4xl mt-3">APIテスト</h1>
         <input
-          className="relateve text-gray-900 border-collapse m-2 p-1.5 rounded-lg"
+          className="relative text-gray-900 border-collapse m-2 p-1.5 rounded-lg"
           type="text"
           value={text}
           onChange={changeText}
