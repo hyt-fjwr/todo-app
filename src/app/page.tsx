@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import "./style.css"; // Assuming you have this CSS file in your project
+import AuthForm from "./auth-form";
 
 export default function Home() {
   const [text, setText] = useState("");
@@ -57,6 +58,7 @@ export default function Home() {
             ))}
           </TransitionGroup>
         </ul>
+        <AuthForm />
       </div>
     </main>
   );
